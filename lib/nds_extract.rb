@@ -32,6 +32,7 @@ def list_of_directors(source)
     arr << name
     i += 1
   end
+  arr
 end
 
 def total_gross(source)
