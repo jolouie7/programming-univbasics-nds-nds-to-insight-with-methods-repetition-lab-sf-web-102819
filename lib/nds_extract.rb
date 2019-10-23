@@ -43,9 +43,15 @@ def total_gross(source)
   total = 0 
   i = 0 
   while i < source.length do 
-    val = source[i][:name]
+    name = source[i][:name]
+    j = 0 
+    while j < source.length do
+      total += director_hash[name]
+      j += 1
+    end 
     i += 1
   end 
+  total
 end
 
 
